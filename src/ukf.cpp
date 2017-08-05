@@ -65,7 +65,7 @@ UKF::UKF() {
   lambda_ = 3 - n_aug_;
 
   // Predicted sigma points
-  Xsig_pred_ = MatrixXd(n_aug_, 2 * n_aug_ + 1);
+  Xsig_pred_ = MatrixXd(n_x_, 2 * n_aug_ + 1);
 
   // weights
   weights_ = VectorXd(2 * n_aug_ + 1);
