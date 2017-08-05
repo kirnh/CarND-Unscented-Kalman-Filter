@@ -121,9 +121,9 @@ void UKF::ProcessMeasurement(MeasurementPackage meas_package) {
     // we are only certain about the px and py variables
     P_ << 1, 0, 0, 0, 0,
         0, 1, 0, 0, 0,
-        0, 0, 50, 0, 0,
-        0, 0, 0, 50, 0, 
-        0, 0, 0, 0, 50;
+        0, 0, 40, 0, 0,
+        0, 0, 0, 40, 0, 
+        0, 0, 0, 0, 40;
 
     // Done initialising state vector and convariance matrix
     // No need to predict or update
